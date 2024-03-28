@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300&family=Overpass:ital,wght@0,100;0,200;0,500;1,100;1,300&family=Play&family=Rajdhani:wght@300;400;500;600&family=Roboto+Mono:ital,wght@0,400;1,300&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Sometype+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+body {
+    margin:0;
+    padding:0;
+    font-family: 'Overpass', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+    /* height: 100vh; */
+}
+.app {
+    width: 400px;
+    height: 600px;
+    border-radius: 25px;
+    background: radial-gradient(circle,
+    rgb(236,236,236) 0%,
+    rgb(255,255,255)80%);
+    box-shadow: rgba(0,0,0,0.1) 0 4px 12px;
+    padding:60px 30px;
+    margin-top:20px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+}
+header p {
+    color:rgb(133,133,133); 
+}
+header h2 {
+    color: rgb(222, 82, 112);
+    font-size: 24px;
+}
+header .logo-container {
+    width: 50px;
+    position: relative;
+    top:25px;
+    right: 40px;
+}
+header .logo-container img {
+    width: 100%;
+}
+nav::-webkit-scrollbar{
+    display: none;
+}
+nav {
+    display: flex;
+    width: 380px;
+    overflow-x: scroll;
+    /* -ms-overflow-style: none;
+    scrollbar-width: none; */
+}
+button.primary {
+    border:none;
+    background-color: rgb(56, 86, 236);
+    color: white;
+    font-size: 13px;
+    border-radius: 10px;
+    padding: 8px;
+    margin-right: 5px;
+    cursor:pointer;
+    font-weight: 600;
+}
+button.primary:disabled{
+    background-color: rgba(221, 206, 206, 0.885);
+    color:rgb(171, 161, 161);
+    cursor:default;
+}
+.card{
+    height: 100px;
+    width: 100%;
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: rgb(255,255,255);
+    display: flex;
+    justify-content: space-between;
+}
+.card .img-container{
+    width: 100px;
+    height: 100%;
+    overflow: hidden;
+}
+.card .img-container img{
+    width: 100%;
+    box-sizing: content-box;
+}
+.card .text-container p {
+    font-size: 11px;
+    padding:0 0 0 5px;
+}
+.card .info-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.card .info-container .priceDrop {
+    background-color: rgb(34, 169, 13);
+    border-radius: 30px;
+    height: 25px;
+    width: 25px;
+    padding: 10px;
+    color:white;
+    font-size: 16px;
+}
+.card .info-container a {
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.feed {
+    height: 400px;
+    overflow-y: scroll;
+}
+.feed p {
+    font-weight: 600;
+}
